@@ -7,7 +7,7 @@ export const AppContext = createContext()
 const AppContextProvider = (props)=>{
     const [doctors,setDoctors] = useState([])
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    const backendUrl = "https://docsleek.onrender.com"
     const [token,setToken] = useState(localStorage.getItem('token')?localStorage.getItem('token'):false)
     const [userData,setUserData] = useState(false)
 
